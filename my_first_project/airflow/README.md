@@ -24,3 +24,10 @@ To stop Airflow, run:
 ```bash
 docker compose down
 ```
+
+Airflow commands
+```bash
+airflow dags list
+airflow dags backfill --start-date 2024-02-09 --end-date 2024-02-10 weather_api_dag --reset-dagruns
+airflow tasks test weather_api_dag get_weather_data
+```
